@@ -1,0 +1,25 @@
+.login{
+    border-bottom: 1px solid var(--light-border-color);
+    padding: 100px 0;
+}
+.login .login-content {
+    grid-template-columns: 600px auto;
+}
+.login-main{
+    order: 2;
+}
+.login .login-content .login-main .login-main-content{}
+.login-image{
+    order: 1;
+}
+.login-rememberme {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--dark-text);
+    margin-top: 5px;
+}
+.login-rememberme input{}
+.login-rememberme label{
+    font-size: 17px;
+}

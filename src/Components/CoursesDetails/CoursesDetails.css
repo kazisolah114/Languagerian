@@ -1,0 +1,186 @@
+.course-details-page{
+    padding: 50px 0;
+    background: #f5f6f9ba;
+}
+.course-details-container{}
+.course-details-content {
+    display: grid;
+    grid-template-columns: auto 420px;
+    gap: 25px;
+}
+.course-details-content .course-details{
+    background: #fff;
+    border-radius: 10px;
+    
+}
+.course-details-content .course-details .course-details-header{
+    border-bottom: 1px solid var(--border-color);
+    padding: 30px 30px 40px 30px;
+    /* margin-bottom: 40px; */
+}
+.course-details-content .course-details .course-details-header h1 {
+    font-size: 30px;
+    color: var(--dark-text);
+    margin-bottom: 10px;
+}
+.course-details-content .course-details .course-details-header p{}
+.course-details-content .course-details .course-details-header .course-headline {
+    color: #333333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.course-details-content .course-details .course-details-header .course-instructor {
+    font-size: 14px;
+    color: var(--dark-text);
+    margin-bottom: 10px;
+}
+.course-details-content .course-details .course-details-header .course-category {
+    display: flex;
+    margin: 15px 0;
+    align-items: center;
+    gap: 15px;
+    flex-direction: row-reverse;
+    justify-content: left;
+    color: var(--dark-text);
+}
+.course-details-content .course-details .course-details-header .course-category img{
+    width: 25px;
+}
+.course-details-content .course-details .course-details-header .course-category p{}
+.course-details-content .course-details .course-details-header .rating-students {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.course-details-content .course-details .course-details-header .rating-students div {
+    display: flex;
+    gap: 15px;
+}
+.course-details-content .course-details .course-details-header .rating-students div .course-rating {
+    color: var(--primary-color);
+    font-size: 18px;
+}
+.course-details-content .course-details .course-details-header .rating-students div h5 {
+    font-size: 15px;
+    color: var(--dark-text);
+}
+.course-details-content .course-details .course-details-header .rating-students p {
+    font-size: 15px;
+    color: var(--dark-text);
+}
+.course-details-content .course-details .course-details-header .date-language {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.course-details-content .course-details .course-details-header .date-language p{
+    color: var(--dark-text);
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+.course-details-content .course-details .course-details-header .date-language p svg{
+    margin-right: 7px;
+    font-size: 14px;
+}
+.course-details-content .course-details .course-details-main{
+    padding: 40px 30px;
+}
+.course-details-content .course-details .course-details-main div{
+    margin-bottom: 15px;
+}
+.course-details-content .course-details .course-details-main div b {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--dark-text);
+}
+.course-details-content .course-details .course-details-main div p {
+    color: var(--dark-text);
+    line-height: 1.6em;
+}
+.course-details-container .browse-more-course{
+    margin-top: 25px;
+    width: 62%;
+}
+.course-details-container .browse-more-course a{}
+.course-details-container .browse-more-course a button {
+    width: 100%;
+    height: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    background: var(--primary-color);
+    color: var(--white-text);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+
+.course-details-content .course-buy {
+    background: #fff;
+    border-radius: 10px;
+    height: 80%;
+}
+.course-details-content .course-buy .course-buy-banner{
+    margin-bottom: 15px;
+}
+.course-details-content .course-buy .course-buy-banner img {
+    border-radius: 10px 10px 0 0;
+    height: 280px;
+    width: 100%;
+}
+.course-details-content .course-buy .price {
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+.course-details-content .course-buy .price div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 5px;
+}
+.course-details-content .course-buy .price div h2 {
+    color: var(--dark-text);
+    font-size: 30px;
+}
+.course-details-content .course-buy .price div del {
+    color: #616161;
+    font-size: 17px;
+}
+.course-details-content .course-buy .price div p {
+    color: #616161;
+    font-size: 15px;
+}
+.course-details-content .course-buy .course-buy-btns {
+    padding: 0 20px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.course-details-content .course-buy .course-buy-btns .course-btn {
+    height: 50px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+.course-details-content .course-buy .course-buy-btns .course-cart-btn{
+    border: none;
+    background: var(--primary-color);
+    color: var(--white-text);
+    transition: .3s;
+}
+.course-details-content .course-buy .course-buy-btns .course-cart-btn:hover{
+    /* background: var(--primary-color); */
+}
+.course-details-content .course-buy .course-buy-btns .course-buy-btn{
+    border: 1px solid var(--border-color);
+    background: transparent;
+    transition: .3s;
+}
+.course-details-content .course-buy .course-buy-btns .course-buy-btn:hover{
+    background-color: #e1e1e1e6;
+}

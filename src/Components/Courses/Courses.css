@@ -1,0 +1,111 @@
+.courses {
+    padding: 50px 0;
+    background: #f5f6f9ba;
+}
+.courses .courses-container{}
+.courses .courses-container .courses-content{}
+.courses .courses-container .courses-content .courses-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px!important;
+}
+.courses .courses-container .courses-content .courses-menu li {
+    list-style: none;
+    font-weight: bold;
+    color: #616161;
+    font-size: 14px;
+    background: #fff;
+    padding: 8px 20px;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .3s;
+}
+.courses .courses-container .courses-content .courses-menu li:hover{
+    background: var(--primary-color);
+    color: var(--white-text);
+}
+.courses .courses-container .courses-content .courses-menu .active-course{
+    background: var(--primary-color);
+    color: var(--white-text);
+}
+.courses .courses-container .courses-content .courses-item {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    gap: 40px 58px;
+}
+.courses .courses-container .courses-content .courses-item div {
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+}
+.courses .courses-container .courses-content .courses-item div a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.courses .courses-container .courses-content .courses-item div .item-banner img {
+    width: 100%;
+    height: 230px;
+    border-radius: 10px 10px 0 0;
+}
+.courses .courses-container .courses-content .courses-item div .item-text {
+    padding: 15px 20px;
+}
+.courses .courses-container .courses-content .courses-item div .item-text h3 {
+    color: var(--dark-text);
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.courses .courses-container .courses-content .courses-item div .item-text p {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #616161;
+    font-size: 14px;
+}
+.courses .courses-container .courses-content .courses-item div .item-text p svg{}
+.courses .courses-container .courses-content .courses-item div .item-text div {
+    display: flex;
+    gap: 10px;
+}
+.courses .courses-container .courses-content .courses-item div .item-text div .course-rating{}
+.courses .courses-container .courses-content .courses-item div .item-text div .course-rating span{
+    color: var(--primary-color)
+}
+.courses .courses-container .courses-content .courses-item div .item-text div h5{
+    color: var(--dark-text);
+    font-size: 13px;
+}
+.courses .courses-container .courses-content .courses-item div .item-text .price-wishlist{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.courses .courses-container .courses-content .courses-item div .item-text .price-wishlist svg {
+    border: 1px solid var(--light-border-color);
+    padding: 7px;
+    border-radius: 50px;
+    color: var(--primary-color);
+    z-index: 1;
+    cursor: pointer;
+    transition: .3s;
+}
+.courses .courses-container .courses-content .courses-item div .item-text .price-wishlist svg:hover{
+    background-color: var(--primary-color);
+    color: var(--white-text);
+}
+.courses .courses-container .courses-content .courses-item div .item-text .price-wishlist h4 {
+    font-size: 16px;
+
+    color: var(--dark-text);
+}

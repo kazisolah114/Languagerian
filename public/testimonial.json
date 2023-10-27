@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "name": "John Doe",
+      "position": "CEO, XYZ Company",
+      "testimonial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fLorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat eugiat hendreritLorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat  justo, ac varius odio tincidunt non.",
+      "image": "https://img.freepik.com/free-photo/candid-shot-fashionable-elegant-mature-sixty-year-old-man-with-gray-beard-bald-head-having-focused-look-using-wifi-generic-laptop-touch-typing-fast-people-age-gadgets-concept_343059-1766.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "position": "Marketing Manager, ABC Inc.",
+      "testimonial": "Nulla nec nunc et est aliquam tincidunt ac at nulla. Fusce a nisl vitae mi aLorem ipsum dolor sit amet, consectetur adipiscing elit. QuisqueLorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat  feugiat liquam feugiat.",
+      "image": "https://ntvb.tmsimg.com/assets/assets/33357_v9_bb.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Sam Johnson",
+      "position": "Founder, Acme Solutions",
+      "testimonial": "Aenean ac quam nec nisi eleifend dapibus in non lectus. Integer ac odio eget arcu faucibLorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat  adipiscing elit. Quisque feugiat us pellentesque.",
+      "image": "https://hips.hearstapps.com/hmg-prod/images/gettyimages-57368767.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Emily Brown",
+      "position": "CTO, Tech Innovators",
+      "testimonial": "Vivamus eget risus nec Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat quam finibus vehicula. Quisque varius urna vel volutpat aLorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat ccumsan.",
+      "image": "https://assets2.cbsnewsstatic.com/hub/i/r/2015/05/28/3ace7481-13df-4a87-aa61-b752597e7c21/thumbnail/640x427/af06b6eb856b2916452036d473fb9c7a/promo.jpg?v=c616fa01c1e89090ed3e507dc56e7b05"
+    },
+    {
+      "id": 5,
+      "name": "Michael Clark",
+      "position": "Creative Director, DesignCo",
+      "testimonial": "In non velit nec est consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat tristique. Sed vel metus non nulla bibendum conLorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat sequat.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Q5BXL8oX7biDoOJdvx6ebpJJsC35AM5Xow&usqp=CAU"
+    },
+    {
+      "id": 6,
+      "name": "Linda Wilson",
+      "position": "COO, Innovation Corp",
+      "testimonial": "Praesent euismod erat ut purus efficitur,Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat  nec lacinia justo vestibulum. Integer et libero ac metus euismod.",
+      "image": "https://ntvb.tmsimg.com/assets/assets/33357_v9_bb.jpg"
+    }
+  ]

@@ -1,0 +1,76 @@
+.banner-section{
+    margin: 50px 0;
+}
+.banner-section .banner-container{
+    width: 98%;
+}
+.banner-section .banner-container .banner-content {
+    display: flex!important;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner-section .banner-container .banner-content .banner1{}
+.banner-section .banner-container .banner-content .banner2{}
+.banner-section .banner-container .banner-content .text-content{}
+.banner-section .banner-container .banner-content .text-content h2 {
+    font-size: 40px;
+    color: var(--dark-text);
+    margin-bottom: 30px;
+}
+.banner-section .banner-container .banner-content .text-content ul{
+    padding-left: 30px;
+}
+.banner-section .banner-container .banner-content .text-content ul li {
+    list-style: none;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #616161;
+    position: relative;
+}
+.banner-section .banner-container .banner-content .text-content ul li::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: -28px;
+    width: 13px;
+    height: 13px;
+    background-color: var(--primary-color);
+    border-radius: 10px 10px 0 10px;
+}
+.banner-section .banner-container .banner-content .img-content{}
+.banner-section .banner-container .banner-content .img-content img{
+    width: 700px;
+}
+
+
+.banner-section .banner-container .course-data-banner {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid var(--light-border-color);
+    padding: 30px 30px;
+    width: 74%;
+    border-radius: 5px;
+}
+.banner-section .banner-container .course-data-banner .course-data-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.banner-section .banner-container .course-data-banner .course-data-item img{
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+}
+.banner-section .banner-container .course-data-banner .course-data-item div{}
+.banner-section .banner-container .course-data-banner .course-data-item div h4 {
+    margin: 0;
+    font-size: 13px;
+    color: var(--text-dark);
+}
+.banner-section .banner-container .course-data-banner .course-data-item div p {
+    margin: 0;
+    font-size: 14px;
+    color: #616161;
+}

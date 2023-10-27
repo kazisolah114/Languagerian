@@ -1,0 +1,144 @@
+.hide-student{
+    display: none;
+}
+.hide-instructor{
+    display: none;
+}
+
+.registration {
+    padding: 100px 0;
+    border-bottom: 1px solid var(--light-border-color);
+}
+.registration-content {
+    display: grid;
+    grid-template-columns: auto 600px;
+    align-items: center;
+    gap: 80px;
+}
+.registration-main {
+    padding: 50px 30px;
+    background: #fafafa;
+    border-radius: 10px;
+}
+.registration-main .registration-role {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.registration-main .registration-role button {
+    width: 180px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    background: #d2d2d275;
+}
+.registration-main .registration-role .student-role {
+    color: #fff;
+    background: var(--primary-color);
+}
+.registration-main .registration-role .instructor-role{
+    color: #fff;
+    background: var(--primary-color);
+}
+.registration-main .registration-main-content{}
+.registration-main .registration-main-content h3 {
+    margin-bottom: 20px;
+    font-size: 17px;
+    color: var(--dark-text);
+}
+.registration-main .registration-main-content form{}
+.registration-main .registration-main-content form .registration-field{
+    position: relative;
+}
+.registration-main .registration-main-content form .registration-field input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid var(--light-border-color);
+    outline: none;
+    padding-left: 10px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    
+}
+.registration-main .registration-main-content form .registration-field svg {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 18px;
+    height: 18px;
+    color: #616161;
+}
+/* .registration-main .registration-main-content form .registration-field span {
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    color: #616161;
+    font-size: 15px;
+}
+.registration-main .registration-main-content form .registration-field span.span-go-top{
+    top: 20px;
+} */
+.registration-main .registration-main-content form .signup-btn {
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    background: var(--button-color);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .3s;
+}
+.registration-main .registration-main-content form .signup-btn:hover{
+    background: var(--button-color-hover);
+}
+.registration-main .registration-main-content form .terms-conditions {
+    font-size: 12px;
+    color: #616161;
+}
+.registration-main .registration-main-content form .terms-conditions a{
+    text-decoration: underline;
+}
+.registration-main .registration-main-content form .already-login{
+    font-size: 14px;
+}
+.registration-main .registration-main-content form .already-login a{
+    text-decoration: none;
+    color: var(--primary-color)
+}
+/* .registration-main .registration-main-content form .OR{
+    text-align: center;
+    margin: 25px 0;
+}
+.registration-main .registration-main-content form .OR span{
+    position: relative;
+}
+.registration-main .registration-main-content form .OR span::before {
+    content: '';
+    position: absolute;
+    top: 11px;
+    left: 30px;
+    width: 150px;
+    height: 1px;
+    background-color: #ccc;
+}
+.registration-main .registration-main-content form .OR span::after{
+    content: '';
+    position: absolute;
+    top: 11px;
+    right: 30px;
+    width: 150px;
+    height: 1px;
+    background-color: #ccc;
+} */
+.registration-image{}
+.registration-image img{
+    width: 600px;
+}

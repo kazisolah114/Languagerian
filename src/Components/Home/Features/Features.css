@@ -1,0 +1,33 @@
+.features-section{
+    padding: 100px 0;
+}
+.features-section .features-content{
+    display: flex;
+    gap: 70px;
+}
+.features-section .features-content .feature-item{
+    text-align: center;
+}
+.features-section .features-content .feature-item img {
+    width: 300px;
+}
+.features-section .features-content .feature-item h4 {
+    margin: 20px 0 10px 0;
+    font-size: 17px;
+    color: #474747;
+}
+.features-section .features-content .feature-item p {
+    font-size: 15px;
+    margin-bottom: 25px;
+    color: #616161;
+}
+.features-section .features-content .feature-item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    transition: .3s;
+}
+.features-section .features-content .feature-item a svg{
+    margin-left: 7px;
+}

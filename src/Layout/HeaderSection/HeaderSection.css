@@ -1,0 +1,100 @@
+.header-section {
+    border-bottom: 1px solid var(--light-border-color);
+    padding: 20px 0;
+}
+.header-section .header-container{}
+.header-section .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-section .header-content .header-logo{}
+.header-section .header-content .header-logo a{}
+.header-section .header-content .header-logo a img{
+    width: 160px;
+}
+.header-section .header-content .header-search{}
+.header-section .header-content .header-search form{
+    position: relative;
+}
+.header-section .header-content .header-search form input[type="text"] {
+    width: 450px;
+    height: 42px;
+    padding: 0 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+    outline: none;
+}
+.header-section .header-content .header-search form button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 43px;
+    width: 120px;
+    border-radius: 0 50px 50px 0;
+    
+    border: none;
+    border-left: 1px solid var(--border-color);
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* font-size: 14px; */
+    transition: .3s;
+}
+.header-section .header-content .header-search form button:hover{
+    background: var(--primary-color);
+    color: var(--white-text);
+}
+.header-section .header-content .header-search form button svg{
+    margin-right: 5px;
+    font-size: 18px;
+}
+.header-section .header-content .header-menu{}
+.header-section .header-content .header-menu ul{
+    display: flex;
+    align-items: center;
+    gap: 15px
+}
+.header-section .header-content .header-menu ul li{
+    list-style: none;
+}
+.header-section .header-content .header-menu ul li a {
+    color: var(--dark-text);
+    font-size: 15px;
+    transition: .3s;
+}
+.header-section .header-content .header-menu ul li a:hover{
+    color: var(--primary-color);
+}
+.header-section .header-content .header-menu ul li a.active{
+    color: var(--primary-color);
+}
+.header-section .header-content .header-user-login{}
+.header-section .header-content .header-user-login a{}
+.header-section .header-content .header-user-login a .user-button {
+    width: 100px;
+    height: 42px;
+    border: 1px solid var(--border-color);
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.header-section .header-content .header-user-login a .user-login-button {
+    background: transparent;
+    margin-right: 7px;
+    border: none;
+}
+.header-section .header-content .header-user-login a .user-registration-button{
+    background: var(--button-color);
+    color: var(--white-text);
+    border: none;
+    transition: .5s;
+}
+.header-section .header-content .header-user-login a .user-registration-button:hover{
+    background: var(--button-color-hover);
+    transition: .5s;
+}

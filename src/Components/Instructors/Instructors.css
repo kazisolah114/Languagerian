@@ -1,0 +1,80 @@
+.instructors{
+    padding: 50px 0;
+    background-color: #F8F8FB;
+}
+.instructors-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 40px;
+}
+.instructors-content .instructor-item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    /* border: 1px solid var(--border-color); */
+    border-radius: 10px;
+    background-color: #fff;
+}
+.instructors-content .instructor-item .instructor-img{
+    height: 230px;
+}
+.instructors-content .instructor-item .instructor-img img {
+    width: 230px;
+    height: 230px;
+    border-radius: 10px 0 0 10px;
+}
+.instructors-content .instructor-item .instructor-info{
+    color: var(--dark-text);
+    width: 50%;
+}
+.instructors-content .instructor-item .instructor-info h3{
+    font-size: 17px;
+    color: var(--primary-color)
+}
+.instructors-content .instructor-item .instructor-info b {
+    font-size: 13px;
+    display: block;
+    margin-bottom: 10px;
+}
+.instructors-content .instructor-item .instructor-info p {
+    font-size: 14px;
+}
+.instructors-content .instructor-item .instructor-info div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.instructors-content .instructor-item .instructor-info div .view-courses-btn {
+    width: 140px;
+    height: 45px;
+    background: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-weight: bold;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: .3s;
+}
+.instructors-content .instructor-item .instructor-info div .view-courses-btn:hover{
+    background: var(--primary-color);
+    color: var(--white-text);
+    border: none;
+}
+.instructors-content .instructor-item .instructor-info .instructor-social {
+    margin-top: 0;
+    display: flex;
+    gap: 10px;
+}
+.instructors-content .instructor-item .instructor-info .instructor-social a{}
+.instructors-content .instructor-item .instructor-info .instructor-social a svg {
+    font-size: 16px;
+    background: #616161;
+    border-radius: 50px;
+    padding: 5px;
+    color: #fff;
+    /* transition: ; */
+}
+.instructors-content .instructor-item .instructor-info .instructor-social a svg:hover{
+    background-color: var(--primary-color)
+}
