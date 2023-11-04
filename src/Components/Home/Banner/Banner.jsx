@@ -8,17 +8,20 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/bundle';
 import 'swiper/css/autoplay';
-// import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
+import { useMediaQuery } from 'react-responsive';
+
 
 
 const Banner = () => {
+    const mediumScreen = useMediaQuery({ query: '(max-width: 1268px)' });
+    const mobileScreen = useMediaQuery({ query: '(max-width: 628px)' });
+    console.log(mobileScreen)
     const settings = {
         arrows: false,
         dots: false,
         infinite: true,
         speed: 1,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 5000,
         slidesToShow: 1,
         slidesToScroll: 1
@@ -54,6 +57,7 @@ const Banner = () => {
     return (
         <div className='banner-section'>
             <div className="banner-container">
+
                 <Slider {...settings}>
                     <div className='banner-content container banner1'>
                         <div className="text-content">
@@ -70,7 +74,7 @@ const Banner = () => {
                     </div>
                     <div className='banner-content container banner2'>
                         <div className="text-content">
-                            <h2>Become fluent in your desired languages</h2>
+                            <h2>Learning languages is always worth it</h2>
                             <ul>
                                 <li>Learn languages in a fun way</li>
                                 <li>Choose courses from your favorite instructors</li>
@@ -83,33 +87,84 @@ const Banner = () => {
                     </div>
 
                 </Slider>
-                <div className="course-data-banner container">
-                    <Swiper
-                        spaceBetween={50}
-                        slidesPerView={6}
-                        autoplay={true}
+                {mobileScreen
+                    ?
+                    <div className="course-data-banner container">
+                        <Swiper
+                            spaceBetween={50}
+                            slidesPerView={2}
+                            autoplay={true}
+                            reverseDirection={true}
+                            loop={true}
+                        >
+                            {uniqueCourse.map(courseName => {
+                                const course = courseData.find(data => data.course_name === courseName);
+                                return (
+                                    <SwiperSlide className="course-data-item" key={course._id}>
+                                        <img src={course.course_image} alt="" />
+                                        <div>
+                                            <h4>{course.course_name}</h4>
+                                            <p>{courseCount[courseName] || 0} Courses</p>
+                                        </div>
+                                    </SwiperSlide>
+                                );
+                            })}
+                        </Swiper>
+                    </div>
+                    :
+                    mediumScreen
+                    ?
                         
-                        onSlideChange={() =>  console.log('slide change')}
-                        onSwiper={(swiper) => console.log(swiper)}
-
-                    >
-
-                        {uniqueCourse.map(courseName => {
-                            const course = courseData.find(data => data.course_name === courseName);
-                            return (
-                                <SwiperSlide className="course-data-item" key={course._id}>
-                                    <img src={course.course_image} alt="" />
-                                    <div>
-                                        <h4>{course.course_name}</h4>
-                                        <p>{courseCount[courseName] || 0} Courses</p>
-                                    </div>
-                                </SwiperSlide>
-                            );
-                        })}
-                    </Swiper>
-
-
-                </div>
+                        <div className="course-data-banner container">
+                            <Swiper
+                            
+                                spaceBetween={50}
+                                slidesPerView={3}
+                                autoplay={true}
+                                reverseDirection={true}
+                                loop={true}
+                            >
+                                {uniqueCourse.map(courseName => {
+                                    const course = courseData.find(data => data.course_name === courseName);
+                                    return (
+                                        <SwiperSlide className="course-data-item" key={course._id}>
+                                            <img src={course.course_image} alt="" />
+                                            <div>
+                                                <h4>{course.course_name}</h4>
+                                                <p>{courseCount[courseName] || 0} Courses</p>
+                                            </div>
+                                        </SwiperSlide>
+                                    );
+                                })}
+                            </Swiper>
+                        </div>
+                    :
+                       
+                        <div className="course-data-banner container">
+                            <Swiper
+                              
+                              className="mySwiper"
+                                spaceBetween={50}
+                                slidesPerView={4}
+                                autoplay={{delay: 1000}}
+                                reverseDirection={true}
+                                loop={true}
+                            >
+                                {uniqueCourse.map(courseName => {
+                                    const course = courseData.find(data => data.course_name === courseName);
+                                    return (
+                                        <SwiperSlide className="course-data-item" key={course._id}>
+                                            <img src={course.course_image} alt="" />
+                                            <div>
+                                                <h4>{course.course_name}</h4>
+                                                <p>{courseCount[courseName] || 0} Courses</p>
+                                            </div>
+                                        </SwiperSlide>
+                                    );
+                                })}
+                            </Swiper>
+                        </div>
+                }
             </div>
         </div>
     );

@@ -101,7 +101,7 @@
 }
 .course-details-container .browse-more-course{
     margin-top: 25px;
-    width: 62%;
+    /* width: 62%; */
 }
 .course-details-container .browse-more-course a{}
 .course-details-container .browse-more-course a button {
@@ -121,7 +121,9 @@
 .course-details-content .course-buy {
     background: #fff;
     border-radius: 10px;
-    height: 80%;
+    height: 100%;
+    padding-bottom: 25px;
+    box-sizing: border-box;
 }
 .course-details-content .course-buy .course-buy-banner{
     margin-bottom: 15px;

@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './HeaderSection.css'
-import { HiSearch } from "react-icons/hi";
+import { HiMenu, HiSearch, HiX } from "react-icons/hi";
 
 const HeaderSection = () => {
+    const [menuToggle, setMenuToggle] = useState(false);
+    console.log(menuToggle)
     return (
         <header className='header-section'>
             <div className="header-container container-head-foot">
@@ -17,7 +19,19 @@ const HeaderSection = () => {
                             <button type="submit"><HiSearch /> Search</button>
                         </form>
                     </div>
-                    <div className="header-menu">
+                    <div className="menu-toggle">
+                        <h5 className='menu-toggler' onClick={() => setMenuToggle(!menuToggle)}>
+                        {
+                        menuToggle
+                        ?
+                        <HiX />
+                        :
+                        <HiMenu />
+                        }
+                        </h5>
+                        
+                    </div>
+                    <div className={`header-menu ${menuToggle ? 'show-header-menu' : 'hide-header-menu'}`} onClick={() => setMenuToggle(false)}>
                         <ul>
                             <li><NavLink to="/" className={({ isActive, isPending }) =>
                                 isPending ? "pending" : isActive ? "active" : ""
@@ -28,15 +42,16 @@ const HeaderSection = () => {
                             <li><NavLink to="/instructors" className={({ isActive, isPending }) =>
                                 isPending ? "pending" : isActive ? "active" : ''
                             }>Instructors</NavLink></li>
-                            <li><NavLink to="/aboutus" className={({ isActive, isPending }) =>
+                            <li><NavLink to="/community" className={({ isActive, isPending }) =>
                                 isPending ? "pending" : isActive ? "active" : ''
-                            }>About Us</NavLink></li>
+                            }>Community</NavLink></li>
                         </ul>
+                        <div className="header-user-login">
+                            <Link to="/login"><button className='user-button user-login-button'>Log In</button></Link>
+                            <Link to="/registration"><button className='user-button user-registration-button'>Join Now</button></Link>
+                        </div>
                     </div>
-                    <div className="header-user-login">
-                        <Link to="/login"><button className='user-button user-login-button'>Log In</button></Link>
-                        <Link to="/registration"><button className='user-button user-registration-button'>Join Now</button></Link>
-                    </div>
+
                 </div>
             </div>
         </header>

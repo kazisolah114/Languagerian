@@ -17,6 +17,7 @@ img{
 .container-head-foot{
     max-width: 1368px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 /* Font */
 h1, h2, h3, h4, h5, h6, a, li, p, span, b{
@@ -50,4 +51,218 @@ h1, h2, h3, h4, h5, h6, a, li, p, span, b{
     width: 100%;
     height: 5px;
     border-radius: 10px;
+}
+
+
+
+
+
+
+/* RESPONSIVE CSS */
+@media screen and (max-width: 1268px) {
+    .header-section .header-content .header-search {
+        display: none;
+    }
+    .banner-section{
+        padding: 0 20px;
+    }
+    
+    .courses .courses-container .courses-content .courses-item {
+        gap: 40px 30px!important;
+    }
+    .course-details-page {
+        padding: 50px 20px!important;
+    }
+}
+@media screen and (max-width: 992px) {
+    
+    .banner-section .banner-container .banner-content {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .instructors-content{
+        grid-template-columns: auto!important;
+    }
+    .featured-courses{
+        padding: 100px 0;
+    }
+    .courses .courses-container .courses-content .courses-item {
+        grid-template-columns: auto auto!important;
+    }
+    
+    
+    .features-section .features-content {
+        padding: 0 20px;;
+        display: grid!important;
+        grid-template-columns: auto auto;
+    }
+    .faqs .faqs-content {
+        width: 87%!important;
+        margin: unset!important;
+        /* margin: 0 auto!important; */
+    }
+
+    .courses .courses-container .courses-content .courses-menu {
+        display: grid!important;
+        grid-template-columns: auto auto auto;
+        gap: 10px 5px;
+        width: 100%!important;
+    }
+    .banner-section .banner-container .course-data-banner {
+        width: 80%!important;
+    }
+
+    .main-footer-content {
+        grid-template-columns: 2fr!important;
+
+    }
+    .registration-content {
+        grid-template-columns: 1fr!important;
+        gap: 25px!important;
+    }
+    .login-image {
+        order: 2!important;
+    }
+    .login-main {
+        order: 1!important;
+    }
+    .registration-main .registration-role button {
+        width: 145px!important;
+        height: 45px!important;
+    }
+}
+
+@media screen and (max-width: 792px) {
+    .header-section{
+        padding: 10px 0!important;
+    }
+    .header-section .header-menu{
+       
+    }
+    .header-section .show-header-menu {
+        flex-direction: column;
+        align-items: unset!important;
+        position: absolute!important;
+        top: 66px;
+        right: 0;
+        max-width: 100%;
+        padding: 15px 0;
+        z-index: 9;
+        background-color: #fff;
+        gap: 0px!important;
+        opacity: 1;
+        width: 100%;
+        height: 100vh;
+        transition: max-width .3s ease-in;
+    }
+    .header-section .header-content .show-header-menu ul {
+        align-items: unset!important;
+        flex-direction: column;
+        gap: 5px!important;
+    }
+    .header-section .header-content .show-header-menu ul li, .header-section .header-content .header-user-login a {
+        list-style: none;
+        padding: 15px 20px;
+        border-bottom: 1px solid var(--light-border-color);
+    }
+    .header-section .header-content .show-header-menu ul li a{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .header-section .header-content .header-user-login {
+        display: flex;
+        flex-direction: column;
+    }
+    .header-section .hide-header-menu{
+        
+        position: absolute;
+        right: 0;
+        max-width: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: max-width 0.1s ease-in;
+    }
+    .header-section .header-content .header-user-login a .user-button {
+        width: unset!important;
+        height: unset!important;
+        color: var(--dark-text);
+    }
+    .header-section .header-content .header-user-login a .user-registration-button {
+        background: unset!important;
+        color: var(--dark-text)!important;
+    }
+    .header-section .header-content .header-logo a img {
+        width: 130px!important;
+    }
+    .menu-toggle{
+        display: block!important;
+    }
+    
+    .course-details-content {
+        grid-template-columns: 1fr!important;
+
+    }
+    .course-details-content .course-details{
+        order: 2;
+    }
+    .course-details-content .course-buy{
+        order: 1;
+    }
+    .browse-more-course{
+        grid-template-columns: auto!important;
+    }
+
+
+    .section-header{
+        text-align: center;
+    }
+    .bottom-footer-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .bottom-footer-content .copyright-links {
+        gap: 20px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 628px) {
+    .section-header h2::after {
+        width: 0!important;
+        height: 0!important;
+
+    }
+    .courses .courses-container .courses-content .courses-item {
+        grid-template-columns: auto!important;
+    }
+    .features-section .features-content {
+        grid-template-columns: auto;
+    }
+    
+    .instructors-content .instructor-item {
+        gap: 15px!important;
+    }
+    .faqs .faqs-content {
+        width: 80%!important;
+    }
+    .instructors-content .instructor-item .instructor-info div {
+        flex-direction: column!important;
+        justify-content: unset!important;
+        margin-top: 7px!important;
+        align-items: unset!important;
+    }
+    .instructors-content .instructor-item .instructor-info .instructor-social {
+        flex-direction: unset!important;
+        margin-bottom: 10px;
+    }
+    .instructors-content .instructor-item .instructor-info .instructor-social a svg {
+        font-size: 13px!important;
+    }
+    .instructors-content .instructor-item .instructor-info {
+        width: 100%!important;
+    }
+    .banner-section .banner-container .course-data-banner .course-data-item {
+        gap: 7px!important;
+    }
 }

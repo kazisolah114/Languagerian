@@ -52,7 +52,11 @@
     margin-right: 5px;
     font-size: 18px;
 }
-.header-section .header-content .header-menu{}
+.header-section .header-content .header-menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
 .header-section .header-content .header-menu ul{
     display: flex;
     align-items: center;
@@ -97,4 +101,13 @@
 .header-section .header-content .header-user-login a .user-registration-button:hover{
     background: var(--button-color-hover);
     transition: .5s;
+}
+
+
+.menu-toggle{
+    display: none;
+}
+.menu-toggle svg {
+    font-size: 25px;
+    color: var(--primary-color);
 }

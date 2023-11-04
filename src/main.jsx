@@ -41,6 +41,14 @@ const router = createBrowserRouter([
         element: <Login />
       }
     ]
+  },
+  {
+    path: 'community',
+    element: <div style={{textAlign: 'center'}}>
+      <img src="https://img.freepik.com/free-vector/oops-404-error-with-broken-robot-concept-illustration_114360-5529.jpg" alt="" />
+      <h1 style={{color: 'rgb(191 47 31)'}}>Languagerian Community is under construction! Check back later.</h1>
+      
+    </div>
   }
 ])
 

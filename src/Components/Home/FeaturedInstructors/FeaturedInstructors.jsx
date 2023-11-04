@@ -28,7 +28,7 @@ const FeaturedInstructors = () => {
                                 </div>
                                 <div className="instructor-info">
                                     <h3>{instructor.instructor_name}</h3>
-                                    <b>{instructor.instructor_email}</b>
+                                    <p className='instructor-email'>{instructor.instructor_email}</p>
                                     <p>{instructor.instructor_title}</p>
                                     <p>{instructor.instructor_name} has {instructor.number_of_courses} courses</p>
                                     <div>

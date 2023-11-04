@@ -68,7 +68,7 @@ const CoursesDetails = () => {
                         <div className="price">
                             <div>
                                 <h2>${course.price}</h2>
-                                <p><del>${(course.price + course.price*0.3).toFixed(2)}</del> 30% off</p>
+                                <p><del>${(course.price + course.price * 0.3).toFixed(2)}</del> 30% off</p>
                             </div>
                             <div>
                                 <p>YAY, you are one step away from learning {course.course_name}</p>
@@ -81,8 +81,9 @@ const CoursesDetails = () => {
 
                     </div>
                 </div>
-                <div className="browse-more-course">
+                <div className="browse-more-course" style={{ display: 'grid', gridTemplateColumns: 'auto 420px', gap: '20px' }}>
                     <Link to="/courses"><button>Browse More</button></Link>
+                    <h1></h1>
                 </div>
             </div>
         </div>

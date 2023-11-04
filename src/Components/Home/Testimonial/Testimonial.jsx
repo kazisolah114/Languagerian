@@ -3,11 +3,13 @@ import 'bear-react-carousel/dist/index.css';
 import React, { useEffect, useState } from 'react';
 import './Testimonial.css';
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
+import { useMediaQuery } from 'react-responsive';
 
 
 
 const Testimonial = () => {
-
+    const tabletScreen = useMediaQuery({query: '(max-width: 992px)'});
+    console.log(tabletScreen)
     const [testimonial, setTestimonial] = useState([]);
     useEffect(() => {
         fetch('/testimonial.json')
@@ -27,7 +29,22 @@ const Testimonial = () => {
     });
 
     const CustomBanner = () => {
-        return <BearCarousel
+        return <>
+        {
+            tabletScreen ?
+            <BearCarousel
+            data={data}
+            // height="350px"
+            isEnableLoop
+            slidesPerView={1}
+            isEnableNavButton
+
+            // isEnablePagination
+            // isDebug
+            // isCenteredSlides
+        />
+        :
+        <BearCarousel
             data={data}
             // height="350px"
             isEnableLoop
@@ -38,6 +55,7 @@ const Testimonial = () => {
             // isDebug
             // isCenteredSlides
         />
+        }</>
     }
 
     return (

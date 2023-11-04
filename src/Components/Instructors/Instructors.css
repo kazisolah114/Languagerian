@@ -31,10 +31,11 @@
     font-size: 17px;
     color: var(--primary-color)
 }
-.instructors-content .instructor-item .instructor-info b {
+.instructors-content .instructor-item .instructor-info .instructor-email {
     font-size: 13px;
-    display: block;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
+    color: var(--dark-text);
+    font-weight: bold;
 }
 .instructors-content .instructor-item .instructor-info p {
     font-size: 14px;

@@ -2,7 +2,9 @@
   margin: 100px 0;
   padding: 100px 0;
 }
-
+.testimonial-section .testimonial-container{
+  padding: 0 20px;
+}
 .testimonial-item {
   /* margin-right: unset!important; */
 }
@@ -125,4 +127,14 @@
   height: 30px;
   width: 30px;
   border-radius: unset;
+}
+
+.bear-react-carousel__nav-group>.bear-react-carousel__nav-next-button {
+  right: 35px!important;
+}
+.bear-react-carousel__nav-group>.bear-react-carousel__nav-prev-button {
+  left: 35px!important;
+}
+.bear-react-carousel__nav-button {
+  background-color: rgb(234 234 234);
 }
